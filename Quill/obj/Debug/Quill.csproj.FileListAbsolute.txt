@@ -1,0 +1,16 @@
+D:\Github\Quill\Quill\Quill\bin\Debug\Quill.exe.config
+D:\Github\Quill\Quill\Quill\bin\Debug\Resources\data.json
+D:\Github\Quill\Quill\Quill\bin\Debug\Quill.exe
+D:\Github\Quill\Quill\Quill\bin\Debug\Quill.pdb
+D:\Github\Quill\Quill\Quill\bin\Debug\Newtonsoft.Json.dll
+D:\Github\Quill\Quill\Quill\bin\Debug\Newtonsoft.Json.xml
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.csprojResolveAssemblyReference.cache
+D:\Github\Quill\Quill\Quill\obj\Debug\MainWindow.baml
+D:\Github\Quill\Quill\Quill\obj\Debug\MainWindow.g.cs
+D:\Github\Quill\Quill\Quill\obj\Debug\App.g.cs
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill_MarkupCompile.cache
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.g.resources
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.Properties.Resources.resources
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.csproj.GenerateResource.Cache
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.exe
+D:\Github\Quill\Quill\Quill\obj\Debug\Quill.pdb

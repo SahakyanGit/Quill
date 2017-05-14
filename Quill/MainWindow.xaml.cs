@@ -89,25 +89,7 @@ namespace Quill
         private void signInBtn_Click(object sender, RoutedEventArgs e)
         {
             bool accountExist = false;
-            //for (int i = 0; i < _logList.Count; i++)
-            //{
-            //    if (Login == (string)_logList[i] && Password == (string)_passList[i])
-            //    {
-            //        accountExist = true;
-            //        break;
-            //    }
-            //}
-            //if (!accountExist)
-            //{
-            //    for (int i = 0; i < loginListBox.Items.Count; i++)
-            //    {
-            //        if (Login == (string)loginListBox.Items[i] && Password == (string)passwordListBox.Items[i])
-            //        {
-            //            accountExist = true;
-            //            break;
-            //        }
-            //    }
-            //}
+
             try
             {
                 StreamReader reader = new StreamReader(_path);
@@ -116,14 +98,18 @@ namespace Quill
 
                 List<Account> data = JsonConvert.DeserializeObject<List<Account>>(content);
 
-                for (int i = 0; i < data.Count; i++)
+                if (data!=null)
                 {
-                    if (Login == (string)data[i].Login && Password == (string)data[i].Password)
+                    for (int i = 0; i < data.Count; i++)
                     {
-                        accountExist = true;
-                        break;
+                        if (Login == (string)data[i].Login && Password == (string)data[i].Password)
+                        {
+                            accountExist = true;
+                            break;
+                        }
                     }
                 }
+                
             }
             catch (Exception ex)
             {
@@ -212,6 +198,10 @@ namespace Quill
             }
         }
 
+        /// <summary>
+        /// Validation for empty field.
+        /// </summary>
+        /// <returns></returns>
         private bool Validation()
         {
             bool isValide = true;
@@ -229,6 +219,10 @@ namespace Quill
             return isValide;
         }
 
+        /// <summary>
+        /// check for admin account
+        /// </summary>
+        /// <returns></returns>
         private bool Admin()
         {
             bool isAdmin = Login == "admlog" && Password == "admpass";
@@ -260,6 +254,11 @@ namespace Quill
             return isAdmin;
         }
 
+        /// <summary>
+        /// back button event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void backBtn_Click(object sender, RoutedEventArgs e)
         {
             HideAmin();
@@ -268,6 +267,10 @@ namespace Quill
             passwordListBox.Items.Clear();
         }
 
+        /// <summary>
+        /// Validation for password
+        /// </summary>
+        /// <returns></returns>
         private bool ValidatePassword()
         {
             bool isValidLength = true;
@@ -337,23 +340,23 @@ namespace Quill
 
             if (!isValidLength)
             {
-                MessageBox.Show("your password should be more than 8 characters.");
+                MessageBox.Show("Passwords must be at least 8 characters in length.");
             }
             if (!containCapital)
             {
-                MessageBox.Show("Should contain at least one or more capital character");
+                MessageBox.Show("Password must be include at least one uppercase letter.");
             }
             if (!containLower)
             {
-                MessageBox.Show("Should contain at least one or more lower character");
+                MessageBox.Show("Password must be include at least one lowercase letter.");
             }
             if (!containNumber)
             {
-                MessageBox.Show("Should contain at least one or more number.");
+                MessageBox.Show("Password must be include at least one number.");
             }
             if (!contanSymbol)
             {
-                MessageBox.Show("Should contain at least one or more symbol");
+                MessageBox.Show("Password must be include at least one special character.");
             }
 
             if (isValidLength && containCapital && containLower && contanSymbol && containNumber)
