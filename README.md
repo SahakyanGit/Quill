@@ -1,4 +1,6 @@
 # Registration
+<img src="https://github.com/SahakyanGit/Quill/blob/master/quill.png" align="right" width="150px" height="150px" /> 
+
 
 - User enters his/her login and password for sign in. 
 - User creates his/her login and password and clicks on the sign up button to create account.
