@@ -1,7 +1,7 @@
 # Registration
 
 - User enters his/her login and password for sign in. 
-- User creates his/her login and password and clicks on the sign up button to enter.
+- User creates his/her login and password and clicks on the sign up button to create account.
 </br>
 
 
