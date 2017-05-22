@@ -1,5 +1,5 @@
 # Registration
-<img src="https://github.com/SahakyanGit/Quill/blob/master/quill.png" align="right" width="150px" height="150px" /> 
+<img src="https://github.com/SahakyanGit/Quill/blob/master/quill.png" align="right" width="130px" height="130px" /> 
 
 
 - User enters his/her login and password for sign in. 
